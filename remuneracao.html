@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EchoEx - Remuneração</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="page-title">Operação / <span>Remuneração</span></div>
+            <div class="help-btn">?</div>
+        </header>
+
+        <section class="content-body">
+            <h1 style="font-size: 32px; margin-bottom: 15px;">Lucros do mês</h1>
+            <div style="background-color: #B5D4A3; border-radius: 25px; padding: 20px; margin-bottom: 30px;">
+                <canvas id="lucrosChart" style="max-height: 250px;"></canvas>
+            </div>
+
+            <h1 style="font-size: 32px; margin-bottom: 15px;">Lucros da semana</h1>
+            <div style="background-color: #B5D4A3; border-radius: 25px; height: 180px;"></div>
+        </section>
+    </main>
+
+    <script>
+        const ctx = document.getElementById('lucrosChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Vendas', 'Finanças', 'Marketing', 'RH'],
+                datasets: [{
+                    label: 'Lucro',
+                    data: [75, 60, 45, 30],
+                    backgroundColor: '#5383EC',
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: { y: { beginAtZero: true, max: 80 } }
+            }
+        });
+    </script>
+</body>
+</html>
