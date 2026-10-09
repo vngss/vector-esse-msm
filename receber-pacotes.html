@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EchoEx - Receber Pacotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar comum omitida para brevidade, manter a mesma da Visão Geral -->
+    <aside class="sidebar">
+        <!-- Reutilize o menu da página Visão Geral trocando o .active para esta página -->
+    </aside>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="page-title">Operação / <span>Receber Pacotes</span></div>
+            <div class="help-btn">?</div>
+        </header>
+
+        <section class="content-body">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar pacotes...">
+            </div>
+
+            <div class="cards-grid">
+                <div class="item-card">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200" class="item-thumb" alt="Papel Higiênico">
+                    <div class="item-info">
+                        <h3>Papel Higiênico</h3>
+                        <p>Empresa: Lacinho's</p>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=200" class="item-thumb" alt="Carro Vermelho">
+                    <div class="item-info">
+                        <h3>Carro Vermelho</h3>
+                        <p>Empresa: Mangroove</p>
+                    </div>
+                </div>
+
+                <!-- Exemplo com detalhes expandidos / Modal -->
+                <div class="item-card" style="grid-column: span 1; align-items: flex-start; flex-direction: column;">
+                    <div style="display: flex; gap: 15px; align-items: center; width: 100%;">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=200" class="item-thumb" alt="Copo de Caveira">
+                        <div class="item-info">
+                            <h3>Copo de Caveira de vidro</h3>
+                            <p>Empresa: Smoothie Girl</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px; color: #555; font-size: 14px; line-height: 1.5;">
+                        <p>Altura: 6,7 cm</p>
+                        <p>Largura: 6,7 cm</p>
+                        <p>Peso: 100g</p>
+                        <p>Material: vidro</p>
+                        <p>Tempo de garantia: 6 meses</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
